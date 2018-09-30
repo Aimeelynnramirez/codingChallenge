@@ -1,0 +1,13 @@
+{
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a standalone sass and jquery template",
+  "main": "index.js",
+  "author": "Aimee Ramirez",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python -m SimpleHTTPServer"
+  }
+}
