@@ -20,32 +20,16 @@
 
 <form name = "myform">
 <p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
-  <input id="button" type="button" value="submit" name="Submit" onclick="methodFun1();">
+  <input id="button" type="button" value="submit" name="Submit" onclick="find();">
 </p>
 
 </form>
   <script src="../assets/js/jquery-2.1.4.js" type="text/javascript"></script>
   <script src="../assets/js/functions.js" type="text/javascript"></script>
   <script>
-    const methodFun = () => {
-      $('.button').on('click');
-      alert('This is challenge number 1.')
-      alert('Click buttons to see the different ways of getting the array together.')
-      alert('Also, take a look in Developer Tools.');
-      alert('Cheers!');
 
-    }
-  </script>
-
-
-
-
-<script type = "text/javascript">
-
- const methodFun1 = () => {
-   
 var count = 2;  
- $('#button').on('click', function() {
+ function find() {
 var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
@@ -87,9 +71,7 @@ document.myform.username.disabled = true;
 document.myform.pword.disabled = true;
 return false;
 }
-
-                                    
-                 })
+}
 
 </script>
   </body>
