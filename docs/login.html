@@ -20,7 +20,7 @@
 
 <form name = "myform">
 <p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
-<input id="login-button" type="button" value="Check In" name="Submit" onclick="validate();">
+<input id="button" type="button" value="Check In" name="Submit" onclick="validate();">
 </p>
 
 </form>
@@ -45,7 +45,6 @@ window.onload = function(){
   $('#button').on('click', function() {
       console.log(' these buttons are clicking');
     })
-  });
 var count = 2;
 const validate = () => {
 var un = document.myform.username.value;
