@@ -1,11 +1,5 @@
 /*! Created by: Aimee Ramirez */
-window.onload = function() {
-  $(document).ready(function() {
-    //this is checking if the buttons are clicking in call.
-    $('.button').on('click', function() {
-      console.log(' these buttons are clicking');
-    })
-  });
+
   const methodNumber1 = $('.fruitButton').on('click', function() {
     //these are two arrays to see in this scope to joined/merged.
     const reBasket = [
@@ -64,7 +58,7 @@ window.onload = function() {
 
     });
   })
-};
+
 //here is a simple fizz buzz example without concat or join or split.
 const mergeFizzBuzz = $('.fizzBuzzButton').on('click', function() {
   //this is an example of a length of 3 times to loop with 1 and 2 being the string values"
