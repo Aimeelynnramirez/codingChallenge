@@ -7,7 +7,6 @@
 
 var count = 2;
 function validate() {
-const location = "login.html"
 var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
@@ -17,7 +16,6 @@ var pwArray = ["Password0", "Password1", "Password2", "Password3"];
 
 for (var i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
-this.location = location;
 valid = true;
 break;
 }
