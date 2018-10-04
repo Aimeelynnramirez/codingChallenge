@@ -42,11 +42,10 @@
 
 <script type = "text/javascript">
 window.onload = function(){
-  $('#button').on('click', function() {
-      console.log(' these buttons are clicking');
-    })
+ 
+   
 var count = 2;
-const validate = () => {
+const validate =  $('#button').on('click', function() {
 var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
@@ -89,6 +88,10 @@ document.myform.pword.disabled = true;
 return false;
 }
 }
+                                    
+                                  
+                                  console.log(' these buttons are clicking');
+    })
 
 }
 
