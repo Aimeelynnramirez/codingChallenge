@@ -1,7 +1,7 @@
 <script type = "text/javascript">
 window.onload = function(){
 var count = 2;
-function validate() {
+const validate = () => {
 var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
@@ -50,7 +50,7 @@ return false;
 
 <form name = "myform">
 <p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
-<input type="button" value="Check In" name="Submit" onclick= "validate()">
+<input type="button" value="Check In" name="Submit" onclick="validate()">
 </p>
 
 </form>
