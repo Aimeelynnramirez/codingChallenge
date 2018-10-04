@@ -8,7 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../assets/img/favicons/ga.jpg">
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="../assets/js/jquery-2.1.4.js" type="text/javascript" language="javascript"></script>
+ <script src="../assets/js/functions.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" src="js.js" language="javascript"></script>
+<Script Language='Javascript'>
+$(document).ready(function(){
+    alert('try to find in the source the js script which did this alert!')
+ } );
+</script>
 </head>
+
 
 
 <body style="padding-left: 20%;">
@@ -25,69 +34,7 @@
 </p>
 
 </form>
- <script src="../assets/js/jquery-2.1.4.js" type="text/javascript" language="javascript"></script>
-  <script src="../assets/js/functions.js" type="text/javascript" language="javascript"></script>
-  <script language="javascript">
 
-var count = 2;  
- function find() {
-
-var un = document.myform.username.value;
-var pw = document.myform.pword.value;
-var valid = false;
-
-var unArray = ["Aimee", "Macky", "Mary", "Jesus"]; 
-var pwArray = ["Password0", "Password1", "Password2", "Password3"]; 
-
-for (var i=0; i <unArray.length; i++) {
-if ((un == unArray[i]) && (pw == pwArray[i])) {
-valid = true;
-break;
-}
-}
-
-if (valid) {
-alert ("Login was successful");
-window.location = "http://aimeelynnramirez.github.io";
-return false;
-}
-
-var t = " tries";
-if (count == 1) {t = " try"}
-
-if (count >= 1) {
-alert ("Invalid username and/or password.  You have " + count + t + " left.");
-document.myform.username.value = "";
-document.myform.pword.value = "";
-setTimeout("document.myform.username.focus()", 25);
-setTimeout("document.myform.username.select()", 25);
-count --;
-}
-
-
-else {
-alert ("Still incorrect! You have no more tries left!");
-document.myform.username.value = "No more tries allowed!";
-document.myform.pword.value = "";
-document.myform.username.disabled = true;
-document.myform.pword.disabled = true;
-return false;
-}
-
-}
-
-
-
-</script>
-
- 
   </body>
 
 </html>
-
-<Script Language='Javascript'>
-<!-- HTML Encryption provided by iWEBTOOL.com -->
-<!--
-document.write(unescape('%3C%6C%69%6E%6B%20%72%65%6C%3D%22%73%74%79%6C%65%73%68%65%65%74%22%20%68%72%65%66%3D%22%73%74%79%6C%65%73%2F%63%73%73%2E%63%73%73%22%20%74%79%70%65%3D%22%74%65%78%74%2F%63%73%73%22%20%6D%65%64%69%61%3D%22%73%63%72%65%65%6E%22%20%2F%3E%0A%3C%73%63%72%69%70%74%20%74%79%70%65%3D%22%74%65%78%74%2F%6A%61%76%61%73%63%72%69%70%74%22%20%73%72%63%3D%22%73%63%72%69%70%74%2F%6A%73%2E%6A%73%22%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%3C%2F%73%63%72%69%70%74%3E%0A'));
-//-->
-</script>
