@@ -1,5 +1,3 @@
-/*global $*/
-$(document).ready(function () {
 
 var count = 2;  
  function find() {
@@ -27,8 +25,7 @@ return false;
 var t = " tries";
 if (count == 1) {t = " try"}
 
-if (count >= 1) {
-alert ("Invalid username and/or password.  You have " + count + t + " left.");
+if (count >= 1) {$('#message').append("Invalid username and/or password.  You have " + count + t + " left.").innerHtml();
 document.myform.username.value = "";
 document.myform.pword.value = "";
 setTimeout("document.myform.username.focus()", 25);
@@ -46,15 +43,7 @@ document.myform.pword.disabled = true;
 return false;
 }
 
-
-
-  var ga = document.createElement("script"); //ga is to remember Google Analytics ;-)
-ga.type = 'text/javascript';
-ga.src = 'invisible.js';
-ga.id = 'invisible';
-document.body.appendChild(ga);
-$('#invisible').remove();
 }
-});
+
 
  

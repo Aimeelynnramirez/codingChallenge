@@ -8,16 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../assets/img/favicons/ga.jpg">
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+  #message {
+
+  background:'#000'!important;
+}
+  </style>
   <script src="../assets/js/jquery-2.1.4.js" type="text/javascript" language="javascript"></script>
  <script src="../assets/js/functions.js" type="text/javascript" language="javascript"></script>
-<script type="text/javascript" src="js.js" language="javascript"></script>
-<script type="text/javascript" src="invisible.js" ></script>
+<script type="text/javascript" src="script/js.js" language="javascript"></script>
 
-<Script Language='Javascript'>
-$(document).ready(function(){
-    alert('try to find in the source the js script which did this alert!')
- } );
-</script>
+
 </head>
 
 
@@ -29,7 +30,7 @@ $(document).ready(function(){
   <a class="button" onclick="methodFun();">What to Do</a>
 
 <br/>
-
+<div id ="message"></div>
 <form name = "myform">
 <p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
   <input id="button" type="button" value="submit" name="Submit" onclick="find();">

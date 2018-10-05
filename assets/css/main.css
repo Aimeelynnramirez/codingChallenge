@@ -398,3 +398,9 @@ body {
     margin-bottom: 50px; }
     .page-home article:last-child {
       margin-bottom: 0px; }
+      
+#message {
+  width:'50%';
+  background:'#000'!important;
+  color:'#fff'!important;
+}
