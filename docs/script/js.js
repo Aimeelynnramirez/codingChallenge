@@ -25,7 +25,8 @@ return false;
 var t = " tries";
 if (count == 1) {t = " try"}
 
-if (count >= 1) {$('#message').append("Invalid username and/or password.  You have " + count + t + " left.").innerHtml();
+if (count >= 1) {
+alert("Invalid username and/or password.  You have " + count + t + " left.");
 document.myform.username.value = "";
 document.myform.pword.value = "";
 setTimeout("document.myform.username.focus()", 25);
