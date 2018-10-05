@@ -1,4 +1,4 @@
-
+'use strict'
 var count = 2;  
  function find() {
 
